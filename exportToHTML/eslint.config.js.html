@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>eslint.config.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #6aab73;}
+.s2 { color: #cf8e6d;}
+.s3 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+eslint.config.js</font>
+</center></td></tr></table>
+<pre><span class="s0">import js from </span><span class="s1">'@eslint/js'</span><span class="s0">;</span>
+<span class="s0">import globals from </span><span class="s1">'globals'</span><span class="s0">;</span>
+<span class="s0">import reactHooks from </span><span class="s1">'eslint-plugin-react-hooks'</span><span class="s0">;</span>
+<span class="s0">import reactRefresh from </span><span class="s1">'eslint-plugin-react-refresh'</span><span class="s0">;</span>
+<span class="s0">import tseslint from </span><span class="s1">'typescript-eslint'</span><span class="s0">;</span>
+
+<span class="s0">export </span><span class="s2">default </span><span class="s0">tseslint.config(</span>
+  <span class="s0">{ ignores: [</span><span class="s1">'dist'</span><span class="s0">] },</span>
+  <span class="s0">{</span>
+    <span class="s0">extends: [js.configs.recommended, ...tseslint.configs.recommended],</span>
+    <span class="s0">files: [</span><span class="s1">'**/*.{ts,tsx}'</span><span class="s0">],</span>
+    <span class="s0">languageOptions: {</span>
+      <span class="s0">ecmaVersion: </span><span class="s3">2020</span><span class="s0">,</span>
+      <span class="s0">globals: globals.browser,</span>
+    <span class="s0">},</span>
+    <span class="s0">plugins: {</span>
+      <span class="s1">'react-hooks'</span><span class="s0">: reactHooks,</span>
+      <span class="s1">'react-refresh'</span><span class="s0">: reactRefresh,</span>
+    <span class="s0">},</span>
+    <span class="s0">rules: {</span>
+      <span class="s0">...reactHooks.configs.recommended.rules,</span>
+      <span class="s1">'react-refresh/only-export-components'</span><span class="s0">: [</span>
+        <span class="s1">'warn'</span><span class="s0">,</span>
+        <span class="s0">{ allowConstantExport: </span><span class="s2">true </span><span class="s0">},</span>
+      <span class="s0">],</span>
+    <span class="s0">},</span>
+  <span class="s0">}</span>
+<span class="s0">);</span>
+</pre>
+</body>
+</html>

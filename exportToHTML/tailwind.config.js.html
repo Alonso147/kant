@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>tailwind.config.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #7a7e85;}
+.s1 { color: #bcbec4;}
+.s2 { color: #cf8e6d;}
+.s3 { color: #6aab73;}
+.s4 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+tailwind.config.js</font>
+</center></td></tr></table>
+<pre><span class="s0">/** @type {import('tailwindcss').Config} */</span>
+<span class="s1">export </span><span class="s2">default </span><span class="s1">{</span>
+  <span class="s1">content: [</span><span class="s3">'./index.html'</span><span class="s1">, </span><span class="s3">'./src/**/*.{js,ts,jsx,tsx}'</span><span class="s1">],</span>
+  <span class="s1">theme: {</span>
+    <span class="s1">extend: {</span>
+      <span class="s1">colors: {</span>
+        <span class="s3">'primary'</span><span class="s1">: {</span>
+          <span class="s4">50</span><span class="s1">: </span><span class="s3">'#ecfdf5'</span><span class="s1">,</span>
+          <span class="s4">100</span><span class="s1">: </span><span class="s3">'#d1fae5'</span><span class="s1">,</span>
+          <span class="s4">200</span><span class="s1">: </span><span class="s3">'#a7f3d0'</span><span class="s1">,</span>
+          <span class="s4">300</span><span class="s1">: </span><span class="s3">'#6ee7b7'</span><span class="s1">,</span>
+          <span class="s4">400</span><span class="s1">: </span><span class="s3">'#34d399'</span><span class="s1">,</span>
+          <span class="s4">500</span><span class="s1">: </span><span class="s3">'#10b981'</span><span class="s1">,</span>
+          <span class="s4">600</span><span class="s1">: </span><span class="s3">'#059669'</span><span class="s1">,</span>
+          <span class="s4">700</span><span class="s1">: </span><span class="s3">'#047857'</span><span class="s1">,</span>
+          <span class="s4">800</span><span class="s1">: </span><span class="s3">'#065f46'</span><span class="s1">,</span>
+          <span class="s4">900</span><span class="s1">: </span><span class="s3">'#064e3b'</span><span class="s1">,</span>
+          <span class="s4">950</span><span class="s1">: </span><span class="s3">'#022c22'</span><span class="s1">,</span>
+        <span class="s1">},</span>
+        <span class="s3">'neutral'</span><span class="s1">: {</span>
+          <span class="s4">50</span><span class="s1">: </span><span class="s3">'#f8fafc'</span><span class="s1">,</span>
+          <span class="s4">100</span><span class="s1">: </span><span class="s3">'#f1f5f9'</span><span class="s1">,</span>
+          <span class="s4">200</span><span class="s1">: </span><span class="s3">'#e2e8f0'</span><span class="s1">,</span>
+          <span class="s4">300</span><span class="s1">: </span><span class="s3">'#cbd5e1'</span><span class="s1">,</span>
+          <span class="s4">400</span><span class="s1">: </span><span class="s3">'#94a3b8'</span><span class="s1">,</span>
+          <span class="s4">500</span><span class="s1">: </span><span class="s3">'#64748b'</span><span class="s1">,</span>
+          <span class="s4">600</span><span class="s1">: </span><span class="s3">'#475569'</span><span class="s1">,</span>
+          <span class="s4">700</span><span class="s1">: </span><span class="s3">'#334155'</span><span class="s1">,</span>
+          <span class="s4">800</span><span class="s1">: </span><span class="s3">'#1e293b'</span><span class="s1">,</span>
+          <span class="s4">900</span><span class="s1">: </span><span class="s3">'#0f172a'</span><span class="s1">,</span>
+          <span class="s4">950</span><span class="s1">: </span><span class="s3">'#020617'</span><span class="s1">,</span>
+        <span class="s1">},</span>
+        <span class="s3">'success'</span><span class="s1">: {</span>
+          <span class="s4">50</span><span class="s1">: </span><span class="s3">'#f0fdf4'</span><span class="s1">,</span>
+          <span class="s4">500</span><span class="s1">: </span><span class="s3">'#22c55e'</span><span class="s1">,</span>
+          <span class="s4">900</span><span class="s1">: </span><span class="s3">'#14532d'</span><span class="s1">,</span>
+        <span class="s1">},</span>
+        <span class="s3">'warning'</span><span class="s1">: {</span>
+          <span class="s4">50</span><span class="s1">: </span><span class="s3">'#fffbeb'</span><span class="s1">,</span>
+          <span class="s4">500</span><span class="s1">: </span><span class="s3">'#f59e0b'</span><span class="s1">,</span>
+          <span class="s4">900</span><span class="s1">: </span><span class="s3">'#78350f'</span><span class="s1">,</span>
+        <span class="s1">},</span>
+        <span class="s3">'error'</span><span class="s1">: {</span>
+          <span class="s4">50</span><span class="s1">: </span><span class="s3">'#fef2f2'</span><span class="s1">,</span>
+          <span class="s4">500</span><span class="s1">: </span><span class="s3">'#ef4444'</span><span class="s1">,</span>
+          <span class="s4">900</span><span class="s1">: </span><span class="s3">'#7f1d1d'</span><span class="s1">,</span>
+        <span class="s1">},</span>
+        <span class="s3">'info'</span><span class="s1">: {</span>
+          <span class="s4">50</span><span class="s1">: </span><span class="s3">'#eff6ff'</span><span class="s1">,</span>
+          <span class="s4">500</span><span class="s1">: </span><span class="s3">'#3b82f6'</span><span class="s1">,</span>
+          <span class="s4">900</span><span class="s1">: </span><span class="s3">'#1e3a8a'</span><span class="s1">,</span>
+        <span class="s1">},</span>
+      <span class="s1">},</span>
+      <span class="s1">fontFamily: {</span>
+        <span class="s1">sans: [</span><span class="s3">'Inter'</span><span class="s1">, </span><span class="s3">'system-ui'</span><span class="s1">, </span><span class="s3">'sans-serif'</span><span class="s1">],</span>
+      <span class="s1">},</span>
+      <span class="s1">animation: {</span>
+        <span class="s3">'fade-in'</span><span class="s1">: </span><span class="s3">'fadeIn 0.5s ease-in-out'</span><span class="s1">,</span>
+        <span class="s3">'slide-up'</span><span class="s1">: </span><span class="s3">'slideUp 0.3s ease-out'</span><span class="s1">,</span>
+        <span class="s3">'pulse-slow'</span><span class="s1">: </span><span class="s3">'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite'</span><span class="s1">,</span>
+      <span class="s1">},</span>
+      <span class="s1">keyframes: {</span>
+        <span class="s1">fadeIn: {</span>
+          <span class="s3">'0%'</span><span class="s1">: { opacity: </span><span class="s3">'0' </span><span class="s1">},</span>
+          <span class="s3">'100%'</span><span class="s1">: { opacity: </span><span class="s3">'1' </span><span class="s1">},</span>
+        <span class="s1">},</span>
+        <span class="s1">slideUp: {</span>
+          <span class="s3">'0%'</span><span class="s1">: { transform: </span><span class="s3">'translateY(10px)'</span><span class="s1">, opacity: </span><span class="s3">'0' </span><span class="s1">},</span>
+          <span class="s3">'100%'</span><span class="s1">: { transform: </span><span class="s3">'translateY(0)'</span><span class="s1">, opacity: </span><span class="s3">'1' </span><span class="s1">},</span>
+        <span class="s1">},</span>
+      <span class="s1">},</span>
+    <span class="s1">},</span>
+  <span class="s1">},</span>
+  <span class="s1">plugins: [],</span>
+<span class="s1">};</span></pre>
+</body>
+</html>
